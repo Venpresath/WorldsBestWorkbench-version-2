@@ -4,10 +4,15 @@
         template: `
                     <h1>Buy stuff</h1>
                     <div ng-repeat="products in $ctrl.product" class="inventoryDiv">
+                    <div class="inventoryContainer">
                         <h2>{{$ctrl.product[$index].name}}</h2>
-                        <p>Price: US$ {{$ctrl.product[$index].price}}
+                        <p>Price: US&#36{{$ctrl.product[$index].price}}
                         <p>Quantity: {{$ctrl.product[$index].quantity}}</p>
                         <button>BUY NOW</button>
+                    </div>
+                    
+                        <img src="{{$ctrl.product[$index].image}}">
+                    
                     </div>`,
         controller: function (productService) {
             let vm = this;
