@@ -1,27 +1,43 @@
-"use strict";
+'use strict';
 {
-    function productService($http) {
-
-        let data = [{
-            product: "World's Best Workbench V1",
+    function productService() {
+        
+        let product = [{
+            name: "World's Best Workbench Mk.I",
             price: 70,
-            quantity: 3 
+            quantity: 3,
+            image: "/unnamed.jpg"
+        },{
+            name: "World's Best Workbench Mk.II",
+            price: 90,
+            quantity: 1,
+            image: "/unnamed.jpg"
+        },{
+            name: "World's Best Workbench Mk.III",
+            price: 290,
+            quantity: 1,
+            image: "/unnamed.jpg"
+        },{
+            name: "World's Best Workbench Mk.IV",
+            price: 700,
+            quantity: 30,
+            image: "/unnamed.jpg"
         }];
 
-        const getProductDetail = function () {
-            let url = `https://api.chec.io/v1/products`;
-            return $http.get(url).then(function (response) {
-                console.log(response);
-            });
-        }
+        const getProduct = function () {
+            return product;
+        };
+
+        // const setProduct = function(newProduct){
+        //     product = newProduct;
+        // }
 
         return {
-            getProductDetail,
-            getData,
-            setData
+            getProduct
         };
     }
+
     angular
         .module("app")
-        .factory("productService", productService)
+        .factory("productService", productService);
 }
