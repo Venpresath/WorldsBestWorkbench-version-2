@@ -1,0 +1,30 @@
+<html ng-app="app">
+
+<head>
+<link rel="stylesheet" href="/css/stylesheet.css">
+<script type="text/javascript" src="https://cdn.chec.io/v1/commerce.js"></script>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="logo"><a href="#!/home">WBW</a></div>
+    <div class="navLinks">
+      <div class="about"><a href="#!/about">About</a></div>
+      <div class="shop"><a href="#!/shop">Shop</a></div>
+    </div>
+  </div>
+
+    <ng-view></ng-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.js'></script>
+    <script src="module.js"></script>
+    <script src="Home.js"></script>
+    <script src="about.js"></script>
+    <script src="shop.js"></script>
+    <script src="productService.js"></script>
+    <script src="Routing.js"></script>
+</body>
+
+</html>
