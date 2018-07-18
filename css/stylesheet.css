@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: grey;
+    padding: 2%;
+}
+.navLinks{
+    display: flex;
+    flex-direction: row;
+}
+.navLink{
+    margin-right: 10px;
+}
+
+.inventoryDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto 3% auto;
+    border: 1px solid black;
+    box-shadow: 1px 7px 16px 0px #9e9e9e;
+}
+
+.about{
+    width: 80%;
+    margin: auto;
+}
