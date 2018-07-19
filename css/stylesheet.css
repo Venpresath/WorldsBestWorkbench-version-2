@@ -31,6 +31,46 @@ h1{
     margin-right: 10px;
 }
 
+/* home */
+
+.homepage{
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.322);    
+}
+
+.homepage>h1{
+    margin: 0 auto;
+}
+
+.homepage>h2{
+    text-align: center;
+}
+.featuredItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.itemCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0 5%;
+    padding: 1%;
+}
+
+.itemCard >img{
+    height: auto;
+    width: 100%;
+}
+.itemCard > h3{
+    font-size: 80%;
+    margin-top: 0;
+}
+/* shop */
+
 .inventoryDiv{
     display: flex;
     flex-direction: row;
@@ -39,6 +79,7 @@ h1{
     width: 75%;
     margin: 0 auto 3% auto;
     border: 1px solid black;
+    border-radius: 8px;
     box-shadow: 1px 7px 16px 0px #9e9e9e;
 }
 
@@ -46,7 +87,7 @@ h1{
     padding: 3%;
 }
 
-img{
+.inventoryDiv>img{
     height: 50%;
     width: auto;
     padding: 3%;
