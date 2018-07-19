@@ -7,7 +7,7 @@
                     <div class="inventoryContainer">
                         <h2>{{$ctrl.product[$index].name}}</h2>
                         <p>Price: US&#36{{$ctrl.product[$index].price}}</p>
-                        <p>Quantity: {{$ctrl.product[$index].quantity}}</p>
+                        <p>{{$ctrl.product[$index].description}}</p>
                         <button>BUY NOW</button>
                     </div>
                     
