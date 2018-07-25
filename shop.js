@@ -8,6 +8,7 @@
                         <h2>{{$ctrl.product[$index].name}}</h2>
                         <p>Price: US&#36{{$ctrl.product[$index].price}}</p>
                         <p>{{$ctrl.product[$index].description}}</p>
+                        <input type="number" min="0" max="{{$ctrl.product[$index].quantity}}">
                         <button>BUY NOW</button>
                     </div>
                     
