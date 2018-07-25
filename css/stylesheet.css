@@ -12,7 +12,6 @@ a{
 h1{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    text-decoration: underline;
 }
 
 .navbar{
@@ -31,44 +30,31 @@ h1{
     margin-right: 10px;
 }
 
-/* home */
+.navLink:hover{
+    text-decoration: underline;
+}
+
+
+
+/* home page */
 
 .homepage{
     height: 100%;
-    background-color: rgba(128, 128, 128, 0.322);    
+    background-color: rgba(128, 128, 128, 0.322);   
 }
 
 .homepage>h1{
-    margin: 0 auto;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 .homepage>h2{
     text-align: center;
 }
-.featuredItems{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
-.itemCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 8px;
-    margin: 0 5%;
-    padding: 1%;
-}
-
-.itemCard >img{
-    height: auto;
-    width: 100%;
-}
-.itemCard > h3{
-    font-size: 80%;
-    margin-top: 0;
-}
 /* shop */
 
 .inventoryDiv{
@@ -96,4 +82,11 @@ h1{
 .about{
     width: 80%;
     margin: auto;
+}
+
+@media screen and (max-width: 600px){
+    .inventoryDiv{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
