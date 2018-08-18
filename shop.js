@@ -8,16 +8,18 @@
                         <h2>{{$ctrl.product[$index].name}}</h2>
                         <p>Price: US&#36{{$ctrl.product[$index].price}}</p>
                         <p>{{$ctrl.product[$index].description}}</p>
-                        <input type="number" min="0" max="{{$ctrl.product[$index].quantity}}">
-                        <button>BUY NOW</button>
+                        <input type="number" min="0" max="{{$ctrl.product[$index].quantity}}" placeholder="{{$ctrl.product[$index].quantity}} available">
+                        <div id="paypal-button"></div>
                     </div>
-                    
+                    <div class="imageContainer">
                         <img src="{{$ctrl.product[$index].image}}">
-                    
+                        
+                    </div
                     </div>`,
         controller: function (productService) {
             let vm = this;
             vm.product = productService.getProduct();
+            vm.payPalPayment = productService.payPalPayment();
         }
     }
     shop.$inject = ['productService'];

@@ -73,7 +73,12 @@ h1{
     padding: 3%;
 }
 
-.inventoryDiv>img{
+.inventoryContainer>input{
+    display: block;
+    width: 26%;
+}
+
+.imageContainer>img{
     height: 50%;
     width: auto;
     padding: 3%;

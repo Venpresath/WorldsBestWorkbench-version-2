@@ -14,7 +14,7 @@
           template: "<contact></contact>"
         })
         .when("/shop", {
-          template: "<shop></shop>"
+          template: "<shop></shop>",
         })
         .otherwise({ redirectTo: "/home" });
     });
