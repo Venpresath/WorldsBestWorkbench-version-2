@@ -24,7 +24,7 @@
                   return actions.payment.create({
                     transactions: [{
                       amount: {
-                        total: product[0].price,
+                        total: product[$index].price,
                         currency: 'USD'
                       }
                     }]

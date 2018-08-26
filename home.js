@@ -3,7 +3,10 @@
     let home = {
         template: `
         <div class="homePage">
-            <h1>World's Best Workbench</h1>
+            <div class="home-welcome">
+                <h1>World's Best Workbench</h1>
+                <p>Over 10 years of design</p>
+            </div>
         </div>
         <div class="offered">
             <h2>What We Offer</h2>

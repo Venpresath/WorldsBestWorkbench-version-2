@@ -9,13 +9,12 @@
                         <p>Price: US&#36{{$ctrl.product[$index].price}}</p>
                         <p>{{$ctrl.product[$index].description}}</p>
                         <input type="number" min="0" max="{{$ctrl.product[$index].quantity}}" placeholder="{{$ctrl.product[$index].quantity}} available">
-                        <div id="paypal-button"></div>
                     </div>
                     <div class="imageContainer">
                         <img src="{{$ctrl.product[$index].image}}">
-                        
-                    </div
-                    </div>`,
+                    </div>
+                    </div>
+                    <div id="paypal-button"></div>`,
         controller: function (productService) {
             let vm = this;
             vm.product = productService.getProduct();
