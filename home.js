@@ -6,6 +6,7 @@
             <div class="home-welcome">
                 <h1>World's Best Workbench</h1>
                 <p>Over 10 years of design</p>
+                <a href="#!/shop">View Our Shop!</a>
             </div>
         </div>
         <div class="offered">

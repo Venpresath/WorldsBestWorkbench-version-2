@@ -20,7 +20,7 @@ h1{
     justify-content: space-between;
     align-items: baseline;
     background-color: grey;
-    padding: 1%;
+    padding: 5px;
 }
 .navLinks{
     display: flex;
@@ -43,26 +43,45 @@ h1{
     background-image: url('/drillwood.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 0.7;
     background-color: rgba(128, 128, 128, 0.322);   
 }
 
 .home-welcome{
     position: absolute;
-    top: 20%;
+    top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .home-welcome>h1{
-    text-align: center;
     opacity: 1;
+    margin: 0;
 }
 
 .home-welcome>p{
     text-align: center;
+    display: block;
     opacity: 1;
+    margin: 10% 0;
+}
+
+.home-welcome>a{
+    text-align: center;
+    padding: 2%;
+    background-color: orange;
+    width: 33%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.home-welcome>a:hover{
+    transform: scale(1.1)
 }
 
 
@@ -113,5 +132,10 @@ h1{
     .inventoryDiv{
         flex-direction: column;
         justify-content: center;
+    }
+    .home-welcome>a{
+        padding: 6%;
+        background-color: orange;
+        width: 66%;
     }
 }

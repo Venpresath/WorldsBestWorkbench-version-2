@@ -4,7 +4,7 @@
         template: `
     <h1>About Us</h1>
     <div class="about">
-    <p>It started with a vision</p>
+    <p>lorem ipsum dolor sit amet</p>
     <p></p> </div>
     `,
         controller: function () {
